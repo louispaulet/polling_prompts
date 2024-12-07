@@ -1,3 +1,4 @@
+import os  # Added import for handling directories
 import requests
 import csv
 import json
@@ -188,7 +189,12 @@ def main():
 
     # Get the filename
     filename = get_filename(prompt)
-    output_file = f"{filename}.csv"
+    
+    # Ensure 'results' directory exists
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)  # Creates the directory if it doesn't exist
+
+    output_file = os.path.join(results_dir, f"{filename}.csv")  # Stores the CSV in the 'results' folder
     print(f"Responses will be saved to: {output_file}")
     logging.info(f"Output file: {output_file}")
 
