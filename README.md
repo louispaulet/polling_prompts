@@ -150,7 +150,6 @@ For any questions, suggestions, or feedback, feel free to reach out:
 
 - **Author:** Louis Paulet
 - **GitHub:** [louispaulet](https://github.com/louispaulet)
-- **Email:** [your.email@example.com](mailto:your.email@example.com)
 
 ---
 
