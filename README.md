@@ -21,6 +21,14 @@
 
 Whether you're curious about how many "Rs" are in the word "strawberry," the height of the Eiffel Tower, or the length of a banana, **polling_prompts** allows you to gather multiple responses efficiently and analyze them collectively.
 
+### Google Colab Integration
+
+The script **`prompt_polling_openai_edition.py`** is the Python export of the Google Colab notebook **`prompt_polling_openai_edition.ipynb`**. This allows you to run the same functionality locally that was previously available on Google Colab.
+
+### LM Studio Experiment
+
+For a small experiment, the completion endpoint used is from **LM Studio**. However, for most cases, we currently use Google Colab notebooks to query the **OpenAI** API, as it tends to be faster.
+
 ## Features
 
 - **Multiple API Calls:** Send a single prompt to an AI model multiple times concurrently.
@@ -70,7 +78,7 @@ Whether you're curious about how many "Rs" are in the word "strawberry," the hei
 2. **Run the Script**
 
    ```bash
-   python polling_prompts.py
+   python prompt_polling_openai_edition.py
    ```
 
 3. **Follow the Prompts**
@@ -104,12 +112,12 @@ Each prompt will be sent multiple times to the AI, and the varied responses can 
 
 ```
 polling_prompts/
-├── results/               # Folder where CSV results are stored
-├── polling_prompts.py     # Main Python script
-├── app.log                # Log file for debugging and error tracking
-├── README.md              # Project documentation
-├── requirements.txt       # Python dependencies
-└── LICENSE                # License information
+├── results/                        # Folder where CSV results are stored
+├── prompt_polling_openai_edition.py  # Main Python script (exported from Google Colab)
+├── app.log                         # Log file for debugging and error tracking
+├── README.md                       # Project documentation
+├── requirements.txt                # Python dependencies
+└── LICENSE                         # License information
 ```
 
 ## Contributing
